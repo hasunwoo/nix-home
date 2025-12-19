@@ -2,6 +2,7 @@
 {
     # packages
     home.packages = with pkgs; [
+        # cli tools
         iotop
         htop
         btop
@@ -13,6 +14,15 @@
         neovim
         tmux
         podman
+
+        # c dev
+        gcc
+        clang
+        llvmPackages.lld
+        llvmPackages.libclang
+        gdb
+        cmake
+        pkg-config
     ];
 
     # cli programs
