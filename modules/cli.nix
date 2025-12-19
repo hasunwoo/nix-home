@@ -13,7 +13,6 @@
         neovim
         tmux
         podman
-        python315
     ];
 
     # cli programs
