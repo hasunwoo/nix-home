@@ -14,15 +14,12 @@
     let
         system = "x86_64-linux";
         username = "hasunwoo";
+        pkgs = nixpkgs.legacyPackages.${system};
     in
     {
         homeConfigurations.${username} =
             home-manager.lib.homeManagerConfiguration {
-                inherit system;
-
-                pkgs = import nixpkgs {
-                    inherit system;
-                };
+                inherit pkgs;
 
                 modules = [
                     ./home.nix
