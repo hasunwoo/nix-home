@@ -18,8 +18,6 @@
         # c dev
         gcc
         clang
-        llvmPackages.lld
-        llvmPackages.libclang
         gdb
         cmake
         pkg-config
