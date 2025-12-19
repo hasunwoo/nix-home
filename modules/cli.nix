@@ -16,8 +16,8 @@
         podman
 
         # c dev
+        stdenv.cc
         gcc
-        clang
         gdb
         cmake
         pkg-config
